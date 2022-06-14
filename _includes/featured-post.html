@@ -1,7 +1,29 @@
 <article>
   <a href="{{ site.github.url }}{{ post.url }}">
+    <!--
     <div class="featured-post" {% if post.image %}style="background-image:url({{ site.github.url }}/assets/img/{{ post.image }})"{% endif %}>
       <h2><span>{{ post.title }}</span></h2>
     </div>
+  -->
+    <style>
+    body {
+    background: linear-gradient(-45deg, #00ffff, #ff75ff, #ffff00);
+    background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
+    height: 100vh;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 0%;
+    }
+  }
+  </style>
   </a>
 </article>
